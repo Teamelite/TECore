@@ -1,0 +1,32 @@
+name: TECore
+version: 1.0
+author: Axanite
+main: io.teamelite.core.Core
+
+commands:
+  done:
+    description: Kicks a player for 'UMadBro?'.
+  l:
+    description: Provides an alias for /list.
+  announce:
+    description: Allows announcements to be made.
+  begintrial:
+    description: Allows trials to begin their trial.
+  endtrial:
+    description: Allows trials to end their trial.
+  stafflist:
+    description: Shows all the staff team.
+  voxel:
+    description: Easy VoxelSniper brush selection.
+  ping:
+    description: Check your ping to the server.
+  staffchat:
+    description: Allows staff to communicate easily.
+  autoflower:
+    description: Populate field with grass and flowers.
+  clearflower:
+    description: Clear flowers in a specified radius.
+  autosnow:
+    description: Populate field with snow (level 1/level 2).
+  clearsnow:
+    description: Clear snow in a specified radius.
