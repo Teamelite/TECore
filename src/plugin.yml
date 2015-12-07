@@ -1,6 +1,6 @@
 name: TECore
 version: 1.0
-author: Axanite
+author: Axanite & mfunGamer
 main: io.teamelite.core.Core
 
 commands:
@@ -30,3 +30,35 @@ commands:
     description: Populate field with snow (level 1/level 2).
   clearsnow:
     description: Clear snow in a specified radius.
+  key-list:
+    usage: /key-list
+    description: Displays all usable keys.
+  world-archive:
+    usage: /world-archive [world] [key]
+    description: Archives the given world or the world you are in.
+  world-create:
+    usage: /world-create <key> [worldname]
+    description: Creates a world with the give key and worldname.
+  key-remove:
+    usage: /key-remove <key>
+    description: Removes a key and its connected world.
+permissions:
+  worldarchive.*:
+    description: Grants access to all worldarchive commands.
+    children:
+      worldarchive.archive: true
+      worldarchive.create: true
+      worldarchive.keys: true
+      worldarchive.remove: true
+  worldarchive.archive:
+    description: Allows you to archive a world.
+    default: op
+  worldarchive.create:
+    description: Allows you to create a world based on a key.
+    default: op
+  worldarchive.keys:
+    description: Allows you to see all available keys.
+    default: op
+  worldarchive.remove:
+    description: Allows you to remove a key and its connected world.
+    default: op

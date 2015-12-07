@@ -22,6 +22,7 @@ import io.teamelite.core.trialmanagement.EndTrial;
 import io.teamelite.core.utilities.trialmanagement.TrialData;
 import io.teamelite.core.voxelbrushes.Voxel;
 import io.teamelite.core.voxelbrushes.events.VoxelInventoryClick;
+import io.teamelite.core.worldarchiver.WorldArchiverMain;
 
 public class Core extends JavaPlugin {
 	/* 
@@ -46,6 +47,16 @@ public class Core extends JavaPlugin {
 		getCommand("voxel").setExecutor(new Voxel());
 		getCommand("ping").setExecutor(new PingCMD());
 		getCommand("staffchat").setExecutor(new StaffChatCMD());
+		getCommand("world-archive").setExecutor(new WorldArchiveCMD());
+		getCommand("world-create").setExecutor(new WorldCreateCMD());
+		getCommand("key-remove").setExecutor(new KeyRemoveCMD());
+		getCommand("key-list").setExecutor(new KeyListCMD());
+		
+		//config
+		this.getConfig().options().header("TE-Core config:");
+		this.getConfig().addDefault("WorldArchive.fallback", "world");
+		this.getConfig().options().copyDefaults(true);
+		this.saveConfig();
 		
 		//Miscellaneous
 		for(Player p : Bukkit.getServer().getOnlinePlayers()) {
@@ -54,9 +65,17 @@ public class Core extends JavaPlugin {
 		
 		TrialData.setup(this);
 		
+		WorldArchiverMain.readkeys();
+		
 		if(Bukkit.getServer().getPluginManager().getPlugin("VoxelSniper") == null) {
 			getLogger().log(Level.SEVERE, "VoxelSniper was not found; disabling TECore!");
 			Bukkit.getServer().getPluginManager().disablePlugin(this);
 		}
+	}
+	
+	public void onDisable(){
+		
+		WorldArchiverMain.writekeys();
+		
 	}
 }
