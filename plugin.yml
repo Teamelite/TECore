@@ -1,6 +1,6 @@
 name: TECore
 version: 1.0
-author: Axanite
+author: Axanite & mfunGamer
 main: io.teamelite.core.Core
 
 commands:
@@ -18,8 +18,6 @@ commands:
     description: Shows all the staff team.
   voxel:
     description: Easy VoxelSniper brush selection.
-  ping:
-    description: Check your ping to the server.
   staffchat:
     description: Allows staff to communicate easily.
   autoflower:
@@ -30,3 +28,15 @@ commands:
     description: Populate field with snow (level 1/level 2).
   clearsnow:
     description: Clear snow in a specified radius.
+  say:
+    description: Sends an in-game announcement.
+  restartserver:
+    description: Starts a countdown from 15 to 0 and restarts server.
+  vanishmessage:
+    description: Sets a custom message to be shown when staff unvanish.
+  information:
+    description: Provides player with information about the TECore plugin.
+  bug:
+    description: Allows for players to report bugs directly to the developers.
+    
+  

@@ -1,4 +1,4 @@
-package io.teamelite.core.other;
+package io.teamelite.core.other.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

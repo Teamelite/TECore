@@ -37,13 +37,21 @@ public class InventorySetup {
 		jamieHead.setItemMeta(jamieHeadMeta);
 		inv.setItem(2, jamieHead);
 		
+		ItemStack benHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
+		SkullMeta benHeadMeta = (SkullMeta) benHead.getItemMeta();
+		benHeadMeta.setOwner("Benji");
+		benHeadMeta.setDisplayName(ChatColor.DARK_RED + ChatColor.BOLD.toString() + "Benji");
+		benHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
+		benHead.setItemMeta(benHeadMeta);
+		inv.setItem(3, benHead);
+		
 		ItemStack jimmerHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
 		SkullMeta jimmerHeadMeta = (SkullMeta) jimmerHead.getItemMeta();
 		jimmerHeadMeta.setOwner("_Jimmer");
 		jimmerHeadMeta.setDisplayName(ChatColor.DARK_RED + ChatColor.BOLD.toString() + "_Jimmer");
 		jimmerHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
 		jimmerHead.setItemMeta(jimmerHeadMeta);
-		inv.setItem(3, jimmerHead);
+		inv.setItem(4, jimmerHead);
 		
 		ItemStack kellieHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
 		SkullMeta kellieHeadMeta = (SkullMeta) kellieHead.getItemMeta();
@@ -51,7 +59,7 @@ public class InventorySetup {
 		kellieHeadMeta.setDisplayName(ChatColor.DARK_RED + ChatColor.BOLD.toString() + "KellieBreanne");
 		kellieHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
 		kellieHead.setItemMeta(kellieHeadMeta);
-		inv.setItem(4, kellieHead);
+		inv.setItem(5, kellieHead);
 		
 		ItemStack bennyHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
 		SkullMeta bennyHeadMeta = (SkullMeta) bennyHead.getItemMeta();
@@ -59,15 +67,7 @@ public class InventorySetup {
 		bennyHeadMeta.setDisplayName(ChatColor.AQUA + "Bowser");
 		bennyHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
 		bennyHead.setItemMeta(bennyHeadMeta);
-		inv.setItem(5, bennyHead);
-		
-		ItemStack creperHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
-		SkullMeta creperHeadMeta = (SkullMeta) creperHead.getItemMeta();
-		creperHeadMeta.setOwner("Creper_face");
-		creperHeadMeta.setDisplayName(ChatColor.AQUA + "Creper_face");
-		creperHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
-		creperHead.setItemMeta(creperHeadMeta);
-		inv.setItem(6, creperHead);
+		inv.setItem(6, bennyHead);
 		
 		ItemStack krazHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
 		SkullMeta krazHeadMeta = (SkullMeta) krazHead.getItemMeta();
@@ -117,45 +117,13 @@ public class InventorySetup {
 		zelfHead.setItemMeta(zelfHeadMeta);
 		inv.setItem(12, zelfHead);
 		
-		ItemStack celineHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
-		SkullMeta celineHeadMeta = (SkullMeta) celineHead.getItemMeta();
-		celineHeadMeta.setOwner("ImCeline");
-		celineHeadMeta.setDisplayName(ChatColor.RED + "ImCeline");
-		celineHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
-		celineHead.setItemMeta(celineHeadMeta);
-		inv.setItem(13, celineHead);
-		
-		ItemStack johnHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
-		SkullMeta johnHeadMeta = (SkullMeta) johnHead.getItemMeta();
-		johnHeadMeta.setOwner("Tumblrr");
-		johnHeadMeta.setDisplayName(ChatColor.RED + "Tumblrr");
-		johnHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
-		johnHead.setItemMeta(johnHeadMeta);
-		inv.setItem(14, johnHead);
-		
-		ItemStack violetHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
-		SkullMeta violetHeadMeta = (SkullMeta) violetHead.getItemMeta();
-		violetHeadMeta.setOwner("Violetheart17");
-		violetHeadMeta.setDisplayName(ChatColor.RED + "Violetheart17");
-		violetHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
-		violetHead.setItemMeta(violetHeadMeta);
-		inv.setItem(15, violetHead);
-		
 		ItemStack zachHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
 		SkullMeta zachHeadMeta = (SkullMeta) zachHead.getItemMeta();
 		zachHeadMeta.setOwner("PleaseTeamIFan");
 		zachHeadMeta.setDisplayName(ChatColor.RED + "PleaseTeamIFan");
 		zachHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
 		zachHead.setItemMeta(zachHeadMeta);
-		inv.setItem(16, zachHead);
-		
-		ItemStack zarxHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
-		SkullMeta zarxHeadMeta = (SkullMeta) zarxHead.getItemMeta();
-		zarxHeadMeta.setOwner("Zarx_");
-		zarxHeadMeta.setDisplayName(ChatColor.RED + "Zarx_");
-		zarxHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
-		zarxHead.setItemMeta(zarxHeadMeta);
-		inv.setItem(17, zarxHead);
+		inv.setItem(13, zachHead);
 		
 		return inv;
 	}

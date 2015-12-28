@@ -1,4 +1,4 @@
-package io.teamelite.core.other;
+package io.teamelite.core.other.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

@@ -4,29 +4,29 @@ import org.bukkit.entity.Player;
 
 import io.teamelite.core.utilities.MessageManager;
 
-public class Creper_face {	
+public class Benji {
 	public static String name() {
-		String name = "Marko";
+		String name = "Ben";
 		return name;
 	}
 	
 	public static String ingamename() {
-		String ingamename = "Creper_face";
+		String ingamename = "Benji";
 		return ingamename;
 	}
 	
 	public static String rank() {
-		String rank = "Developer";
+		String rank = "Administrator";
 		return rank;
 	}
-
+	
 	public static String roles() {
-		String roles = "General Development Work";
+		String roles = "Creations";
 		return roles;
 	}
 	
 	public static String description() {
-		String description = "Does general development work within the team.";
+		String description = "Begins & Maintains team projects as well as performing other administrative tasks.";
 		return description;
 	}
 	

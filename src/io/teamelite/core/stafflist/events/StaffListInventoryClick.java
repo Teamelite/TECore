@@ -10,19 +10,15 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import io.teamelite.core.stafflist.information.AlpakaWhacker;
 import io.teamelite.core.stafflist.information.Axanite;
 import io.teamelite.core.stafflist.information.BeMyZelf;
+import io.teamelite.core.stafflist.information.Benji;
 import io.teamelite.core.stafflist.information.Bowser;
-import io.teamelite.core.stafflist.information.Creper_face;
-import io.teamelite.core.stafflist.information.ImCeline;
 import io.teamelite.core.stafflist.information.KellieBreanne;
 import io.teamelite.core.stafflist.information.KraZ__;
 import io.teamelite.core.stafflist.information.Life855;
 import io.teamelite.core.stafflist.information.MrBestDeni;
 import io.teamelite.core.stafflist.information.Nathan;
 import io.teamelite.core.stafflist.information.PleaseTeamIFan;
-import io.teamelite.core.stafflist.information.Tumblrr;
-import io.teamelite.core.stafflist.information.Violetheart17;
 import io.teamelite.core.stafflist.information.Wolf1278;
-import io.teamelite.core.stafflist.information.Zarx_;
 import io.teamelite.core.stafflist.information._Jimmer;
 import io.teamelite.core.stafflist.information.mfunGamer;
 
@@ -50,20 +46,20 @@ public class StaffListInventoryClick implements Listener {
         if(dN.equals(ChatColor.DARK_RED + ChatColor.BOLD.toString() + "MrBestDeni")) {
         	MrBestDeni.sendInformation(p);
    	   	}
-        if(dN.equals(ChatColor.DARK_RED + ChatColor.BOLD.toString() + "AlpakaWhacker")) {
+       	if(dN.equals(ChatColor.DARK_RED + ChatColor.BOLD.toString() + "AlpakaWhacker")) {
         	AlpakaWhacker.sendInformation(p);
-   	   	}
-       if(dN.equals(ChatColor.DARK_RED + ChatColor.BOLD.toString() + "_Jimmer")) {
+       	}
+       	if(dN.equals(ChatColor.DARK_RED + ChatColor.BOLD.toString() + "Benji")) {
+        	Benji.sendInformation(p);
+       	}
+       	if(dN.equals(ChatColor.DARK_RED + ChatColor.BOLD.toString() + "_Jimmer")) {
         	_Jimmer.sendInformation(p);
-   	   	}
-        if(dN.equals(ChatColor.DARK_RED + ChatColor.BOLD.toString() + "KellieBreanne")) {
-        	KellieBreanne.sendInformation(p);
-   	   	}
+       	}
+       	if(dN.equals(ChatColor.DARK_RED + ChatColor.BOLD.toString() + "KellieBreanne")) {
+    	   KellieBreanne.sendInformation(p);
+       	}
         if(dN.equals(ChatColor.AQUA + "Bowser")) {
         	Bowser.sendInformation(p);
-   	   	}
-        if(dN.equals(ChatColor.AQUA + "Creper_face")) {
-        	Creper_face.sendInformation(p);
    	   	}
         if(dN.equals(ChatColor.AQUA + "KraZ__")) {
         	KraZ__.sendInformation(p);
@@ -83,20 +79,8 @@ public class StaffListInventoryClick implements Listener {
         if(dN.equals(ChatColor.RED + "BeMyZelf")) {
         	BeMyZelf.sendInformation(p);
    	   	}
-        if(dN.equals(ChatColor.RED + "ImCeline")) {
-        	ImCeline.sendInformation(p);
-   	   	}
-        if(dN.equals(ChatColor.RED + "Tumblrr")) {
-        	Tumblrr.sendInformation(p);
-   	   	}
-        if(dN.equals(ChatColor.RED + "Violetheart17")) {
-        	Violetheart17.sendInformation(p);
-   	   	}
         if(dN.equals(ChatColor.RED + "PleaseTeamIFan")) {
         	PleaseTeamIFan.sendInformation(p);
-   	   	}
-        if(dN.equals(ChatColor.RED + "Zarx_")) {
-        	Zarx_.sendInformation(p);
    	   	}
 	}
 }

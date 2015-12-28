@@ -7,11 +7,18 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import io.teamelite.core.other.AnnounceCMD;
-import io.teamelite.core.other.DoneCMD;
-import io.teamelite.core.other.ListAliasCMD;
-import io.teamelite.core.other.PingCMD;
-import io.teamelite.core.other.StaffChatCMD;
+import io.teamelite.core.autoflower.commands.AutoFlower;
+import io.teamelite.core.autoflower.commands.AutoSnow;
+import io.teamelite.core.autoflower.commands.ClearFlower;
+import io.teamelite.core.autoflower.commands.ClearSnow;
+import io.teamelite.core.other.commands.AnnounceCMD;
+import io.teamelite.core.other.commands.BugReportCMD;
+import io.teamelite.core.other.commands.CoreInformationCMD;
+import io.teamelite.core.other.commands.DoneCMD;
+import io.teamelite.core.other.commands.ListAliasCMD;
+import io.teamelite.core.other.commands.RestartServerCMD;
+import io.teamelite.core.other.commands.SayCMD;
+import io.teamelite.core.other.commands.StaffChatCMD;
 import io.teamelite.core.stafflist.StaffList;
 import io.teamelite.core.stafflist.events.StaffListInventoryClick;
 import io.teamelite.core.stafflist.events.StaffListInventoryCreative;
@@ -20,6 +27,7 @@ import io.teamelite.core.tablist.utils.TabListChanger;
 import io.teamelite.core.trialmanagement.BeginTrial;
 import io.teamelite.core.trialmanagement.EndTrial;
 import io.teamelite.core.utilities.trialmanagement.TrialData;
+import io.teamelite.core.vanishmsgs.commands.CustomVanishMessageCMD;
 import io.teamelite.core.voxelbrushes.Voxel;
 import io.teamelite.core.voxelbrushes.events.VoxelInventoryClick;
 
@@ -44,8 +52,16 @@ public class Core extends JavaPlugin {
 		getCommand("endtrial").setExecutor(new EndTrial());
 		getCommand("stafflist").setExecutor(new StaffList());
 		getCommand("voxel").setExecutor(new Voxel());
-		getCommand("ping").setExecutor(new PingCMD());
 		getCommand("staffchat").setExecutor(new StaffChatCMD());
+		getCommand("autoflower").setExecutor(new AutoFlower());
+		getCommand("clearflower").setExecutor(new ClearFlower());
+		getCommand("autosnow").setExecutor(new AutoSnow());
+		getCommand("clearsnow").setExecutor(new ClearSnow());
+		getCommand("say").setExecutor(new SayCMD());
+		getCommand("restartserver").setExecutor(new RestartServerCMD());
+		getCommand("vanishmessage").setExecutor(new CustomVanishMessageCMD());
+		getCommand("information").setExecutor(new CoreInformationCMD());
+		getCommand("bug").setExecutor(new BugReportCMD());
 		
 		//Miscellaneous
 		for(Player p : Bukkit.getServer().getOnlinePlayers()) {
