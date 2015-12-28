@@ -38,5 +38,3 @@ commands:
     description: Provides player with information about the TECore plugin.
   bug:
     description: Allows for players to report bugs directly to the developers.
-    
-  

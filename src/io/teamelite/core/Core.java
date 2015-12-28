@@ -30,13 +30,9 @@ import io.teamelite.core.utilities.trialmanagement.TrialData;
 import io.teamelite.core.vanishmsgs.commands.CustomVanishMessageCMD;
 import io.teamelite.core.voxelbrushes.Voxel;
 import io.teamelite.core.voxelbrushes.events.VoxelInventoryClick;
+import io.teamelite.core.worldarchiver.WorldArchiverMain;
 
 public class Core extends JavaPlugin {
-	/* 
-	 * TO-DO:
-	 * - Import alert, autoflower
-	 * - Once everything is tested and working, change the webhooks for announce & trial management back to the TeamElite Slack.
-	 */
 	public void onEnable() {
 		//Event Registering
 		Bukkit.getServer().getPluginManager().registerEvents(new PlayerJoinTabListChange(), this);
@@ -69,7 +65,7 @@ public class Core extends JavaPlugin {
 		}
 		
 		TrialData.setup(this);
-		
+
 		if(Bukkit.getServer().getPluginManager().getPlugin("VoxelSniper") == null) {
 			getLogger().log(Level.SEVERE, "VoxelSniper was not found; disabling TECore!");
 			Bukkit.getServer().getPluginManager().disablePlugin(this);
