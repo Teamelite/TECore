@@ -11,6 +11,7 @@ import io.teamelite.core.utilities.MessageManager;
 import io.teamelite.core.utilities.Utils;
 
 public class DoneCMD implements CommandExecutor {
+	@SuppressWarnings("deprecation")
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		Player p = (Player) sender;
 		if(cmd.getName().equalsIgnoreCase("done")) { // If /done is run

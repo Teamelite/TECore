@@ -30,7 +30,6 @@ import io.teamelite.core.utilities.trialmanagement.TrialData;
 import io.teamelite.core.vanishmsgs.commands.CustomVanishMessageCMD;
 import io.teamelite.core.voxelbrushes.Voxel;
 import io.teamelite.core.voxelbrushes.events.VoxelInventoryClick;
-import io.teamelite.core.worldarchiver.WorldArchiverMain;
 
 public class Core extends JavaPlugin {
 	public void onEnable() {
