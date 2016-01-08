@@ -27,7 +27,10 @@ import io.teamelite.core.tablist.utils.TabListChanger;
 import io.teamelite.core.trialmanagement.BeginTrial;
 import io.teamelite.core.trialmanagement.EndTrial;
 import io.teamelite.core.utilities.trialmanagement.TrialData;
+import io.teamelite.core.utilities.vanishmsgs.VanishData;
 import io.teamelite.core.vanishmsgs.commands.CustomVanishMessageCMD;
+import io.teamelite.core.vanishmsgs.events.VanishPlayerJoinEVENT;
+import io.teamelite.core.vanishmsgs.events.VanishPreProcessEVENT;
 import io.teamelite.core.voxelbrushes.Voxel;
 import io.teamelite.core.voxelbrushes.events.VoxelInventoryClick;
 
@@ -38,6 +41,8 @@ public class Core extends JavaPlugin {
 		Bukkit.getServer().getPluginManager().registerEvents(new VoxelInventoryClick(), this);
 		Bukkit.getServer().getPluginManager().registerEvents(new StaffListInventoryClick(), this);
 		Bukkit.getServer().getPluginManager().registerEvents(new StaffListInventoryCreative(), this);
+		Bukkit.getServer().getPluginManager().registerEvents(new VanishPreProcessEVENT(), this);
+		Bukkit.getServer().getPluginManager().registerEvents(new VanishPlayerJoinEVENT(), this);
 		
 		//Command Registering
 		getCommand("done").setExecutor(new DoneCMD());
@@ -64,6 +69,7 @@ public class Core extends JavaPlugin {
 		}
 		
 		TrialData.setup(this);
+		VanishData.setup(this);
 
 		if(Bukkit.getServer().getPluginManager().getPlugin("VoxelSniper") == null) {
 			getLogger().log(Level.SEVERE, "VoxelSniper was not found; disabling TECore!");

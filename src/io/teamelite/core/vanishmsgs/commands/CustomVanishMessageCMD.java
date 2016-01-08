@@ -5,13 +5,12 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-
 import io.teamelite.core.utilities.MessageManager;
 import io.teamelite.core.utilities.Utils;
 import io.teamelite.core.utilities.vanishmsgs.VanishData;
 
 public class CustomVanishMessageCMD implements CommandExecutor {
-	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+  public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		Player p = (Player) sender;
 		if(cmd.getName().equalsIgnoreCase("vanishmessage")) {
 			if(!sender.hasPermission("teamelite.vanishcustommessage")) {
@@ -42,4 +41,4 @@ public class CustomVanishMessageCMD implements CommandExecutor {
 		}
 		return true;
 	}
-}
+ }
