@@ -16,12 +16,12 @@ public class Axanite {
 	}
 	
 	public static String rank() {
-		String rank = "Developer";
+		String rank = "Lead Developer";
 		return rank;
 	}
 
 	public static String roles() {
-		String roles = "General Development Work, Lead Developer";
+		String roles = "General Development Work & Development Team Leader";
 		return roles;
 	}
 	

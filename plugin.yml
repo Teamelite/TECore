@@ -20,6 +20,9 @@ commands:
     description: Easy VoxelSniper brush selection.
   staffchat:
     description: Allows staff to communicate easily.
+    aliases:
+    - sc
+    - s
   autoflower:
     description: Populate field with grass and flowers.
   clearflower:

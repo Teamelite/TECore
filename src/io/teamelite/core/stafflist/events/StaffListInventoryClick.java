@@ -13,7 +13,6 @@ import io.teamelite.core.stafflist.information.BeMyZelf;
 import io.teamelite.core.stafflist.information.Benji;
 import io.teamelite.core.stafflist.information.Bowser;
 import io.teamelite.core.stafflist.information.KellieBreanne;
-import io.teamelite.core.stafflist.information.KraZ__;
 import io.teamelite.core.stafflist.information.Life855;
 import io.teamelite.core.stafflist.information.MrBestDeni;
 import io.teamelite.core.stafflist.information.Nathan;
@@ -60,9 +59,6 @@ public class StaffListInventoryClick implements Listener {
        	}
         if(dN.equals(ChatColor.AQUA + "Bowser")) {
         	Bowser.sendInformation(p);
-   	   	}
-        if(dN.equals(ChatColor.AQUA + "KraZ__")) {
-        	KraZ__.sendInformation(p);
    	   	}
         if(dN.equals(ChatColor.AQUA + "mfunGamer")) {
         	mfunGamer.sendInformation(p);

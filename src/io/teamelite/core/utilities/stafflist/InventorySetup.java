@@ -69,21 +69,13 @@ public class InventorySetup {
 		bennyHead.setItemMeta(bennyHeadMeta);
 		inv.setItem(6, bennyHead);
 		
-		ItemStack krazHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
-		SkullMeta krazHeadMeta = (SkullMeta) krazHead.getItemMeta();
-		krazHeadMeta.setOwner("KraZ__");
-		krazHeadMeta.setDisplayName(ChatColor.AQUA + "KraZ__");
-		krazHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
-		krazHead.setItemMeta(krazHeadMeta);
-		inv.setItem(7, krazHead);
-		
 		ItemStack mfunHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
 		SkullMeta mfunHeadMeta = (SkullMeta) mfunHead.getItemMeta();
 		mfunHeadMeta.setOwner("mfunGamer");
 		mfunHeadMeta.setDisplayName(ChatColor.AQUA + "mfunGamer");
 		mfunHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
 		mfunHead.setItemMeta(mfunHeadMeta);
-		inv.setItem(8, mfunHead);
+		inv.setItem(7, mfunHead);
 		
 		ItemStack wolfHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
 		SkullMeta wolfHeadMeta = (SkullMeta) wolfHead.getItemMeta();
@@ -91,7 +83,7 @@ public class InventorySetup {
 		wolfHeadMeta.setDisplayName(ChatColor.AQUA + "Wolf1278");
 		wolfHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
 		wolfHead.setItemMeta(wolfHeadMeta);
-		inv.setItem(9, wolfHead);
+		inv.setItem(8, wolfHead);
 		
 		ItemStack axaniteHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
 		SkullMeta axaniteHeadMeta = (SkullMeta) axaniteHead.getItemMeta();
@@ -99,7 +91,7 @@ public class InventorySetup {
 		axaniteHeadMeta.setDisplayName(ChatColor.AQUA + "Axanite");
 		axaniteHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
 		axaniteHead.setItemMeta(axaniteHeadMeta);
-		inv.setItem(10, axaniteHead);
+		inv.setItem(9, axaniteHead);
 		
 		ItemStack nathanHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
 		SkullMeta nathanHeadMeta = (SkullMeta) nathanHead.getItemMeta();
@@ -107,7 +99,7 @@ public class InventorySetup {
 		nathanHeadMeta.setDisplayName(ChatColor.RED + "001nathan100");
 		nathanHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
 		nathanHead.setItemMeta(nathanHeadMeta);
-		inv.setItem(11, nathanHead);
+		inv.setItem(10, nathanHead);
 		
 		ItemStack zelfHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
 		SkullMeta zelfHeadMeta = (SkullMeta) zelfHead.getItemMeta();
@@ -115,7 +107,7 @@ public class InventorySetup {
 		zelfHeadMeta.setDisplayName(ChatColor.RED + "BeMyZelf");
 		zelfHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
 		zelfHead.setItemMeta(zelfHeadMeta);
-		inv.setItem(12, zelfHead);
+		inv.setItem(11, zelfHead);
 		
 		ItemStack zachHead = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
 		SkullMeta zachHeadMeta = (SkullMeta) zachHead.getItemMeta();
@@ -123,7 +115,7 @@ public class InventorySetup {
 		zachHeadMeta.setDisplayName(ChatColor.RED + "PleaseTeamIFan");
 		zachHeadMeta.setLore(Arrays.asList(ChatColor.GOLD + "Left-Click to learn more about me!"));
 		zachHead.setItemMeta(zachHeadMeta);
-		inv.setItem(13, zachHead);
+		inv.setItem(12, zachHead);
 		
 		return inv;
 	}
