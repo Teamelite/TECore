@@ -1,4 +1,4 @@
-package io.teamelite.core.utilities.voxelbrushes;
+package src.io.teamelite.core.utilities.voxelbrushes;
 
 import org.bukkit.ChatColor;
 import org.bukkit.craftbukkit.v1_8_R2.entity.CraftPlayer;

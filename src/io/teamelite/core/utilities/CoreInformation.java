@@ -1,4 +1,4 @@
-package io.teamelite.core.utilities;
+package src.io.teamelite.core.utilities;
 
 public class CoreInformation {
 	static private String version = "1.1.2";

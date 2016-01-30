@@ -1,4 +1,4 @@
-package io.teamelite.core.utilities.stafflist;
+package src.io.teamelite.core.utilities.stafflist;
 
 import java.util.Arrays;
 

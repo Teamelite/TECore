@@ -1,4 +1,4 @@
-package io.teamelite.core.other.commands;
+package src.io.teamelite.core.other.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -7,10 +7,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import io.teamelite.core.utilities.MessageManager;
-import io.teamelite.core.utilities.Utils;
 import ru.tehkode.permissions.PermissionUser;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
+
+import src.io.teamelite.core.utilities.MessageManager;
+import src.io.teamelite.core.utilities.Utils;
 
 public class StaffChatCMD implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {

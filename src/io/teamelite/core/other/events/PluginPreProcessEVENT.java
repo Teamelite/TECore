@@ -1,12 +1,12 @@
-package io.teamelite.core.other.events;
+package src.io.teamelite.core.other.events;
 
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 
-import io.teamelite.core.utilities.MessageManager;
-import io.teamelite.core.utilities.Utils;
+import src.io.teamelite.core.utilities.MessageManager;
+import src.io.teamelite.core.utilities.Utils;
 
 public class PluginPreProcessEVENT implements Listener {
 	@EventHandler

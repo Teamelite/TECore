@@ -1,11 +1,12 @@
-package io.teamelite.core.utilities;
+package src.io.teamelite.core.utilities;
+
+import net.md_5.bungee.api.ChatColor;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
-import io.teamelite.core.utilities.slack.SlackApi;
-import io.teamelite.core.utilities.slack.SlackMessage;
-import net.md_5.bungee.api.ChatColor;
+import src.io.teamelite.core.utilities.slack.SlackApi;
+import src.io.teamelite.core.utilities.slack.SlackMessage;
 
 public class MessageManager {
 	public static void sendPlayerMessage(Player reciever, String msg) {

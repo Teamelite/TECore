@@ -1,13 +1,14 @@
-package io.teamelite.core.vanishmsgs.commands;
+package src.io.teamelite.core.vanishmsgs.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import io.teamelite.core.utilities.MessageManager;
-import io.teamelite.core.utilities.Utils;
-import io.teamelite.core.utilities.vanishmsgs.VanishData;
+
+import src.io.teamelite.core.utilities.MessageManager;
+import src.io.teamelite.core.utilities.Utils;
+import src.io.teamelite.core.utilities.vanishmsgs.VanishData;
 
 public class CustomVanishMessageCMD implements CommandExecutor {
   public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {

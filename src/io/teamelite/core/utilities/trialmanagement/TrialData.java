@@ -1,4 +1,4 @@
-package io.teamelite.core.utilities.trialmanagement;
+package src.io.teamelite.core.utilities.trialmanagement;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
 
-import io.teamelite.core.utilities.Utils;
+import src.io.teamelite.core.utilities.Utils;
 
 public class TrialData {
 	static File tdF;

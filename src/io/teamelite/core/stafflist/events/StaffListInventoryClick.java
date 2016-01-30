@@ -1,4 +1,4 @@
-package io.teamelite.core.stafflist.events;
+package src.io.teamelite.core.stafflist.events;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -7,19 +7,19 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
-import io.teamelite.core.stafflist.information.AlpakaWhacker;
-import io.teamelite.core.stafflist.information.Axanite;
-import io.teamelite.core.stafflist.information.BeMyZelf;
-import io.teamelite.core.stafflist.information.Benji;
-import io.teamelite.core.stafflist.information.Bowser;
-import io.teamelite.core.stafflist.information.KellieBreanne;
-import io.teamelite.core.stafflist.information.Life855;
-import io.teamelite.core.stafflist.information.MrBestDeni;
-import io.teamelite.core.stafflist.information.Nathan;
-import io.teamelite.core.stafflist.information.PleaseTeamIFan;
-import io.teamelite.core.stafflist.information.Wolf1278;
-import io.teamelite.core.stafflist.information._Jimmer;
-import io.teamelite.core.stafflist.information.mfunGamer;
+import src.io.teamelite.core.stafflist.information.AlpakaWhacker;
+import src.io.teamelite.core.stafflist.information.Axanite;
+import src.io.teamelite.core.stafflist.information.BeMyZelf;
+import src.io.teamelite.core.stafflist.information.Benji;
+import src.io.teamelite.core.stafflist.information.Bowser;
+import src.io.teamelite.core.stafflist.information.KellieBreanne;
+import src.io.teamelite.core.stafflist.information.Life855;
+import src.io.teamelite.core.stafflist.information.MrBestDeni;
+import src.io.teamelite.core.stafflist.information.Nathan;
+import src.io.teamelite.core.stafflist.information.PleaseTeamIFan;
+import src.io.teamelite.core.stafflist.information.Wolf1278;
+import src.io.teamelite.core.stafflist.information._Jimmer;
+import src.io.teamelite.core.stafflist.information.mfunGamer;
 
 public class StaffListInventoryClick implements Listener {
 	@EventHandler

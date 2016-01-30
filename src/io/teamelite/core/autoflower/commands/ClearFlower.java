@@ -1,4 +1,4 @@
-package io.teamelite.core.autoflower.commands;
+package src.io.teamelite.core.autoflower.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -6,8 +6,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import io.teamelite.core.autoflower.utils.FlowerProducer;
-import io.teamelite.core.utilities.Utils;
+import src.io.teamelite.core.autoflower.utils.FlowerProducer;
+import src.io.teamelite.core.utilities.Utils;
 
 public class ClearFlower implements CommandExecutor {
 	public FlowerProducer flowerProducer = new FlowerProducer();

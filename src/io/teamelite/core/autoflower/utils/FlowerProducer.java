@@ -1,4 +1,4 @@
-package io.teamelite.core.autoflower.utils;
+package src.io.teamelite.core.autoflower.utils;
 
 import java.util.ArrayList;
 

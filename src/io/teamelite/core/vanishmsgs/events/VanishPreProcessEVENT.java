@@ -1,13 +1,13 @@
-package io.teamelite.core.vanishmsgs.events;
+package src.io.teamelite.core.vanishmsgs.events;
 
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 
-import io.teamelite.core.utilities.MessageManager;
-import io.teamelite.core.utilities.Utils;
-import io.teamelite.core.utilities.vanishmsgs.VanishData;
+import src.io.teamelite.core.utilities.MessageManager;
+import src.io.teamelite.core.utilities.Utils;
+import src.io.teamelite.core.utilities.vanishmsgs.VanishData;
 
 public class VanishPreProcessEVENT implements Listener {
 	@EventHandler

@@ -1,12 +1,12 @@
-package io.teamelite.core.trialmanagement;
+package src.io.teamelite.core.trialmanagement;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import io.teamelite.core.utilities.MessageManager;
-import io.teamelite.core.utilities.trialmanagement.TrialData;
+import src.io.teamelite.core.utilities.MessageManager;
+import src.io.teamelite.core.utilities.trialmanagement.TrialData;
 
 public class EndTrial implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {

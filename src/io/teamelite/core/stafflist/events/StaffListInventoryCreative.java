@@ -1,4 +1,4 @@
-package io.teamelite.core.stafflist.events;
+package src.io.teamelite.core.stafflist.events;
 
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;

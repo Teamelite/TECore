@@ -1,4 +1,4 @@
-package io.teamelite.core.other.commands;
+package src.io.teamelite.core.other.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -8,12 +8,12 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import io.teamelite.core.utilities.MessageManager;
-import io.teamelite.core.utilities.Utils;
+import src.io.teamelite.core.utilities.MessageManager;
+import src.io.teamelite.core.utilities.Utils;
 
 public class RestartServerCMD implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		Player p = (Player) sender;
+		final Player p = (Player) sender;
 		if(cmd.getName().equalsIgnoreCase("restartserver")) {
 			if(!(sender.hasPermission("teamelite.restartserver"))) { // If the player does not have the 'teamelite.restartserver' permission.
 				MessageManager.sendPlayerMessage(p, Utils.prefix() + ChatColor.LIGHT_PURPLE + " You do not have the sufficient permissions to restart the server!");
@@ -26,8 +26,8 @@ public class RestartServerCMD implements CommandExecutor {
 							cancel();
 							MessageManager.sendServerBroadcast(Utils.prefix() + ChatColor.LIGHT_PURPLE + " The server is restarting NOW.");
 							p.performCommand("save-all");
-							for(Player p : Bukkit.getServer().getOnlinePlayers()) {
-								p.kickPlayer(ChatColor.RED + "Please be patient while the server restarts. \nAll work has been saved that was done prior to restart.");
+							for(Player ply : Bukkit.getServer().getOnlinePlayers()) {
+								ply.kickPlayer(ChatColor.RED + "Please be patient while the server restarts. \nAll work has been saved that was done prior to restart.");
 							}
 							Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "stop");
 						} else {

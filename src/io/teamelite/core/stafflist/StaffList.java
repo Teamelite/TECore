@@ -1,4 +1,4 @@
-package io.teamelite.core.stafflist;
+package src.io.teamelite.core.stafflist;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -6,8 +6,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import io.teamelite.core.utilities.Utils;
-import io.teamelite.core.utilities.stafflist.InventorySetup;
+import src.io.teamelite.core.utilities.Utils;
+import src.io.teamelite.core.utilities.stafflist.InventorySetup;
 
 public class StaffList implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {

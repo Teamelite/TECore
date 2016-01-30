@@ -1,8 +1,8 @@
-package io.teamelite.core.stafflist.information;
+package src.io.teamelite.core.stafflist.information;
 
 import org.bukkit.entity.Player;
 
-import io.teamelite.core.utilities.MessageManager;
+import src.io.teamelite.core.utilities.MessageManager;
 
 public class _Jimmer {	
 	public static String name() {

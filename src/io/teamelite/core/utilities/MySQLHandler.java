@@ -1,4 +1,4 @@
-package io.teamelite.core.utilities;
+package src.io.teamelite.core.utilities;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

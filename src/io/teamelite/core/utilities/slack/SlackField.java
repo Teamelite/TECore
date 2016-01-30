@@ -1,4 +1,4 @@
-package io.teamelite.core.utilities.slack;
+package src.io.teamelite.core.utilities.slack;
 
 import java.util.ArrayList;
 import java.util.List;

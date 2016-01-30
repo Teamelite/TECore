@@ -1,4 +1,4 @@
-package io.teamelite.core.voxelbrushes;
+package src.io.teamelite.core.voxelbrushes;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -9,8 +9,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
-import io.teamelite.core.utilities.Utils;
-import io.teamelite.core.utilities.voxelbrushes.InventoryManager;
+import src.io.teamelite.core.utilities.Utils;
+import src.io.teamelite.core.utilities.voxelbrushes.InventoryManager;
 
 public class Voxel implements CommandExecutor {
 	private Inventory inv;

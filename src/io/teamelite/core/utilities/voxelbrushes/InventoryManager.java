@@ -1,4 +1,4 @@
-package io.teamelite.core.utilities.voxelbrushes;
+package src.io.teamelite.core.utilities.voxelbrushes;
 
 import java.util.Arrays;
 

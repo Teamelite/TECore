@@ -1,4 +1,4 @@
-package io.teamelite.core;
+package src.io.teamelite.core;
 
 import java.util.logging.Level;
 
@@ -7,32 +7,32 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import io.teamelite.core.autoflower.commands.AutoFlower;
-import io.teamelite.core.autoflower.commands.AutoSnow;
-import io.teamelite.core.autoflower.commands.ClearFlower;
-import io.teamelite.core.autoflower.commands.ClearSnow;
-import io.teamelite.core.other.commands.AnnounceCMD;
-import io.teamelite.core.other.commands.BugReportCMD;
-import io.teamelite.core.other.commands.CoreInformationCMD;
-import io.teamelite.core.other.commands.DoneCMD;
-import io.teamelite.core.other.commands.ListAliasCMD;
-import io.teamelite.core.other.commands.RestartServerCMD;
-import io.teamelite.core.other.commands.SayCMD;
-import io.teamelite.core.other.commands.StaffChatCMD;
-import io.teamelite.core.stafflist.StaffList;
-import io.teamelite.core.stafflist.events.StaffListInventoryClick;
-import io.teamelite.core.stafflist.events.StaffListInventoryCreative;
-import io.teamelite.core.tablist.events.PlayerJoinTabListChange;
-import io.teamelite.core.tablist.utils.TabListChanger;
-import io.teamelite.core.trialmanagement.BeginTrial;
-import io.teamelite.core.trialmanagement.EndTrial;
-import io.teamelite.core.utilities.trialmanagement.TrialData;
-import io.teamelite.core.utilities.vanishmsgs.VanishData;
-import io.teamelite.core.vanishmsgs.commands.CustomVanishMessageCMD;
-import io.teamelite.core.vanishmsgs.events.VanishPlayerJoinEVENT;
-import io.teamelite.core.vanishmsgs.events.VanishPreProcessEVENT;
-import io.teamelite.core.voxelbrushes.Voxel;
-import io.teamelite.core.voxelbrushes.events.VoxelInventoryClick;
+import src.io.teamelite.core.autoflower.commands.AutoFlower;
+import src.io.teamelite.core.autoflower.commands.AutoSnow;
+import src.io.teamelite.core.autoflower.commands.ClearFlower;
+import src.io.teamelite.core.autoflower.commands.ClearSnow;
+import src.io.teamelite.core.other.commands.AnnounceCMD;
+import src.io.teamelite.core.other.commands.BugReportCMD;
+import src.io.teamelite.core.other.commands.CoreInformationCMD;
+import src.io.teamelite.core.other.commands.DoneCMD;
+import src.io.teamelite.core.other.commands.ListAliasCMD;
+import src.io.teamelite.core.other.commands.RestartServerCMD;
+import src.io.teamelite.core.other.commands.SayCMD;
+import src.io.teamelite.core.other.commands.StaffChatCMD;
+import src.io.teamelite.core.stafflist.StaffList;
+import src.io.teamelite.core.stafflist.events.StaffListInventoryClick;
+import src.io.teamelite.core.stafflist.events.StaffListInventoryCreative;
+import src.io.teamelite.core.tablist.events.PlayerJoinTabListChange;
+import src.io.teamelite.core.tablist.utils.TabListChanger;
+import src.io.teamelite.core.trialmanagement.BeginTrial;
+import src.io.teamelite.core.trialmanagement.EndTrial;
+import src.io.teamelite.core.utilities.trialmanagement.TrialData;
+import src.io.teamelite.core.utilities.vanishmsgs.VanishData;
+import src.io.teamelite.core.vanishmsgs.commands.CustomVanishMessageCMD;
+import src.io.teamelite.core.vanishmsgs.events.VanishPlayerJoinEVENT;
+import src.io.teamelite.core.vanishmsgs.events.VanishPreProcessEVENT;
+import src.io.teamelite.core.voxelbrushes.Voxel;
+import src.io.teamelite.core.voxelbrushes.events.VoxelInventoryClick;
 
 public class Core extends JavaPlugin {
 	public void onEnable() {

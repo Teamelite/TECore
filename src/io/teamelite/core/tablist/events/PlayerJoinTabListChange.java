@@ -1,11 +1,11 @@
-package io.teamelite.core.tablist.events;
+package src.io.teamelite.core.tablist.events;
 
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import io.teamelite.core.tablist.utils.TabListChanger;
+import src.io.teamelite.core.tablist.utils.TabListChanger;
 
 public class PlayerJoinTabListChange implements Listener {
 	@EventHandler

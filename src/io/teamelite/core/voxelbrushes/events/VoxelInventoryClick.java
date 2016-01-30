@@ -1,4 +1,4 @@
-package io.teamelite.core.voxelbrushes.events;
+package src.io.teamelite.core.voxelbrushes.events;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -7,8 +7,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
-import io.teamelite.core.utilities.Utils;
-import io.teamelite.core.utilities.voxelbrushes.TitleManager;
+import src.io.teamelite.core.utilities.Utils;
+import src.io.teamelite.core.utilities.voxelbrushes.TitleManager;
 
 public class VoxelInventoryClick implements Listener {
 	@EventHandler

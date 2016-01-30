@@ -1,4 +1,4 @@
-package io.teamelite.core.tablist.utils;
+package src.io.teamelite.core.tablist.utils;
  
 import java.lang.reflect.Field;
 

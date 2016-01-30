@@ -1,4 +1,4 @@
-package io.teamelite.core.other.commands;
+package src.io.teamelite.core.other.commands;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -9,8 +9,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import io.teamelite.core.utilities.MessageManager;
-import io.teamelite.core.utilities.Utils;
+import src.io.teamelite.core.utilities.MessageManager;
+import src.io.teamelite.core.utilities.Utils;
 
 public class BugReportCMD implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
